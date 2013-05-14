@@ -1,0 +1,44 @@
+{
+  "name": "node-env-flag",
+  "description": "Little util function for simpler extracting Boolean values from *ENV*-variables, i.e. true values (true, TRUE, 1) vs. false values (false, FALSE, 0).",
+  "keywords": ["process", "env", "flag", "flags", "boolean", "booleans", "true", "false"],
+  "version": "0.1.0",
+  "homepage": "https://github.com/grimen/node-env-flag",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grimen/node-env-flag.git"
+  },
+  "bugs": {
+    "web": "https://github.com/grimen/node-env-flag/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/grimen/node-env-flag/blob/MIT-LICENSE"
+    }
+  ],
+  "author": "Jonas Grimfelt <grimen@gmail.com>",
+  "maintainers": [
+    {
+      "name": "Jonas Grimfelt",
+      "email": "grimen@gmail.com",
+      "web": "https://github.com/grimen"
+    }
+  ],
+  "contributors": [],
+  "scripts": {
+    "test": "make test",
+    "test-ci": "make test-ci"
+  },
+  "bin": {},
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "chai": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "cover": "latest"
+  }
+}
