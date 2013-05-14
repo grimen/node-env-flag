@@ -1,6 +1,6 @@
 # NODE-ENV-FLAG [![Build Status](https://secure.travis-ci.org/grimen/node-env-flag.png)](http://travis-ci.org/grimen/node-env-flag)
 
-Little util function for simpler extracting `Boolean` values from *ENV*-variables, i.e. `true` values (`true`, `TRUE`, `1`) vs. `false` values (`false`, `FALSE`, `0`).
+Little util function for simpler extracting `Boolean` values from `ENV` variables in Node.js, i.e. `true` values (`true`, `TRUE`, `1`) vs. `false` values (`false`, `FALSE`, `0`).
 
 
 ## Example

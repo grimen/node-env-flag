@@ -1,6 +1,6 @@
 {
   "name": "node-env-flag",
-  "description": "Little util function for simpler extracting Boolean values from *ENV*-variables, i.e. true values (true, TRUE, 1) vs. false values (false, FALSE, 0).",
+  "description": "Little util function for simpler extracting Boolean values from ENV-variables in Node.js, i.e. true values (true, TRUE, 1) vs. false values (false, FALSE, 0).",
   "keywords": ["process", "env", "flag", "flags", "boolean", "booleans", "true", "false"],
   "version": "0.1.0",
   "homepage": "https://github.com/grimen/node-env-flag",
