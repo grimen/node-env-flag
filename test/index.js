@@ -99,12 +99,12 @@ module.exports = {
             expect(flag(true, 0)).to.equal(true);
           },
 
-          '("false", 0) => false': function() {
-            expect(flag("false", 0)).to.equal(false);
+          '("true", 0) => false': function() {
+            expect(flag("true", 0)).to.equal(true);
           },
 
-          '("FALSE", "0") => false': function() {
-            expect(flag("FALSE", 0)).to.equal(false);
+          '("TRUE", "0") => false': function() {
+            expect(flag("TRUE", 0)).to.equal(true);
           }
         },
 
@@ -153,15 +153,15 @@ module.exports = {
         },
 
         '(<truthy>, "false")': {
-          '(1, "false") => false': function() {
+          '(1, "false") => true': function() {
             expect(flag(1, "false")).to.equal(true);
           },
 
-          '("1", "false") => false': function() {
+          '("1", "false") => true': function() {
             expect(flag("1", "false")).to.equal(true);
           },
 
-          '(true, "false") => false': function() {
+          '(true, "false") => true': function() {
             expect(flag(true, "false")).to.equal(true);
           },
 
@@ -175,23 +175,23 @@ module.exports = {
         },
 
         '(<truthy>, "FALSE")': {
-          '(1, "FALSE") => false': function() {
+          '(1, "FALSE") => true': function() {
             expect(flag(1, "FALSE")).to.equal(true);
           },
 
-          '("1", "FALSE") => false': function() {
+          '("1", "FALSE") => true': function() {
             expect(flag("1", "FALSE")).to.equal(true);
           },
 
-          '(true, "FALSE") => false': function() {
+          '(true, "FALSE") => true': function() {
             expect(flag(true, "FALSE")).to.equal(true);
           },
 
-          '("true", "FALSE") => false': function() {
+          '("true", "FALSE") => true': function() {
             expect(flag("true", "FALSE")).to.equal(true);
           },
 
-          '("TRUE", "FALSE") => false': function() {
+          '("TRUE", "FALSE") => true': function() {
             expect(flag("TRUE", "FALSE")).to.equal(true);
           }
         }
@@ -585,11 +585,11 @@ module.exports = {
         },
 
         '(<falsy>, "1")': {
-          '(undefined, "1") => false': function() {
+          '(undefined, "1") => true': function() {
             expect(flag(undefined, "1")).to.equal(true);
           },
 
-          '(null, "1") => false': function() {
+          '(null, "1") => true': function() {
             expect(flag(null, "1")).to.equal(true);
           },
 
@@ -615,11 +615,11 @@ module.exports = {
         },
 
         '(<falsy>, true)': {
-          '(undefined, true) => false': function() {
+          '(undefined, true) => true': function() {
             expect(flag(undefined, true)).to.equal(true);
           },
 
-          '(null, true) => false': function() {
+          '(null, true) => true': function() {
             expect(flag(null, true)).to.equal(true);
           },
 
@@ -645,11 +645,11 @@ module.exports = {
         },
 
         '(<falsy>, "true")': {
-          '(undefined, "true") => false': function() {
+          '(undefined, "true") => true': function() {
             expect(flag(undefined, "true")).to.equal(true);
           },
 
-          '(null, "true") => false': function() {
+          '(null, "true") => true': function() {
             expect(flag(null, "true")).to.equal(true);
           },
 
@@ -675,11 +675,11 @@ module.exports = {
         },
 
         '(<falsy>, "TRUE")': {
-          '(undefined, "TRUE") => false': function() {
+          '(undefined, "TRUE") => true': function() {
             expect(flag(undefined, "TRUE")).to.equal(true);
           },
 
-          '(null, "TRUE") => false': function() {
+          '(null, "TRUE") => true': function() {
             expect(flag(null, "TRUE")).to.equal(true);
           },
 
