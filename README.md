@@ -54,3 +54,7 @@ Little util function for simpler extracting `Boolean` values from `ENV` variable
 Released under the MIT license.
 
 Copyright (c) [Jonas Grimfelt](http://github.com/grimen)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/grimen/node-env-flag/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
