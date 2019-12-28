@@ -12,7 +12,7 @@ const TRUTHY_PATTERN = /^1|true$/i
 
 function envFlag (value, defaultValue) {
     if (typeof value === 'undefined' || value === null) {
-        return Boolean(defaultValue === undefined) ? false : TRUTHY_PATTERN.test('' + defaultValue)
+        return (defaultValue === undefined) ? false : TRUTHY_PATTERN.test('' + defaultValue)
 
     } else {
       return TRUTHY_PATTERN.test('' + value) // avoid the boolean/truthy ghetto

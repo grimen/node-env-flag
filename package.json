@@ -36,8 +36,12 @@
     ],
     "contributors": [],
     "scripts": {
-        "test": "npx mocha ./test/index.js",
-        "test-ci": "npx mocha ./test/index.js --reporter dot --ignore-leaks"
+        "test": "npx jest",
+        "test-ci": "npx jest --runInBand --forceExit --detectOpenHandles --coverage",
+        "test-dev": "npx jest --watch",
+        "validate": "npx eslint \"**/*.js\"",
+        "coverage": "npx jest --coverage",
+        "coverage-codecov": "npx codecov"
     },
     "bin": {},
     "engines": {
@@ -45,7 +49,16 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "mocha": "latest",
-        "chai": "latest"
+        "babel-eslint": "^10.0.3",
+        "codecov": "^3.6.1",
+        "eslint": "^6.8.0",
+        "jest": "^24.9.0",
+        "jest-tobetype": "^1.2.3"
+    },
+    "jest": {
+        "bail": true,
+        "verbose": true,
+        "testRegex": "test/.*\\.js",
+        "testEnvironment": "node"
     }
 }
