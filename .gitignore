@@ -1,8 +1,9 @@
 .DS_Store
-.coverage_data
-.*~
-*~
-tmp/*
-log/*
+*.log
+*.pem
 node_modules
-npm-debug.log
+dist
+tmp
+.vscode
+*credentials*
+coverage

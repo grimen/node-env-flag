@@ -1,9 +1,36 @@
-process.env.NODE_ENV = 'test';
 
-module.exports.chai = require('chai');
-module.exports.chai.Assertion.includeStack = true;
+/* =========================================
+      IMPORTS
+-------------------------------------- */
 
-module.exports.assert = module.exports.chai.assert;
-module.exports.expect = module.exports.chai.expect;
+const chai = require('chai')
 
-module.exports.debug = console.log;
+
+/* =========================================
+      ENVIRONMENT
+-------------------------------------- */
+
+process.env.NODE_ENV = 'test'
+
+
+/* =========================================
+      OPTIONS
+-------------------------------------- */
+
+chai.config.includeStack = true
+
+
+/* =========================================
+      EXPORTS
+-------------------------------------- */
+
+const assert = chai.assert
+const expect = chai.expect
+const debug = console.log
+
+module.exports = {
+    chai,
+    assert,
+    expect,
+    debug,
+}

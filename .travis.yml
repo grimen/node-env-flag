@@ -1,7 +1,13 @@
 language: node_js
 node_js:
-  - 0.8
-script:
-  - "make test-ci"
+    - '8'
+    - '10'
+    - '12'
+cache:
+    yarn: true
+    directories:
+        - 'node_modules'
+install: make install-ci
+script: make test-ci
 notifications:
-  email: false
+    email: false
