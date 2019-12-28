@@ -6,15 +6,15 @@ Little util function for simpler extracting `Boolean` values from `ENV` variable
 ## Example
 
 ```javascript
-  var DEFAULT_FOO = 1;
+const DEFAULT_FOO = 1;
 
-  var flag = require('node-env-flag');
+const flag = require('node-env-flag');
 
-  var yep = flag(process.env.FOO, DEFAULT_FOO);
+const yep = flag(process.env.FOO, DEFAULT_FOO);
 
-  if (yep) {
+if (yep) {
     console.log("Foo!")
-  }
+}
 ```
 
 
@@ -36,7 +36,7 @@ Little util function for simpler extracting `Boolean` values from `ENV` variable
 ## Installation
 
 ```shell
-  $ npm install node-env-flag
+$ npm install node-env-flag
 ```
 
 
@@ -45,7 +45,7 @@ Little util function for simpler extracting `Boolean` values from `ENV` variable
 **Local tests:**
 
 ```shell
-  $ make test
+$ make test
 ```
 
 
@@ -54,7 +54,3 @@ Little util function for simpler extracting `Boolean` values from `ENV` variable
 Released under the MIT license.
 
 Copyright (c) [Jonas Grimfelt](http://github.com/grimen)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/grimen/node-env-flag/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
