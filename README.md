@@ -1,4 +1,4 @@
-# NODE-ENV-FLAG [![NPM version](https://badge.fury.io/js/%40grimen%2Fnode-env-flag.svg)](https://badge.fury.io/js/%40grimen%2Fnode-env-flag) [![Build Status](https://secure.travis-ci.org/grimen/node-env-flag.png)](http://travis-ci.org/grimen/node-env-flag) [![Coverage Status](https://codecov.io/gh/grimen/node-env-flag/branch/master/graph/badge.svg)](https://codecov.io/gh/grimen/node-env-flag)
+# NODE-ENV-FLAG [![NPM version](https://badge.fury.io/js/node-env-flag.svg)](https://badge.fury.io/js/node-env-flag) [![Build Status](https://secure.travis-ci.org/grimen/node-env-flag.png)](http://travis-ci.org/grimen/node-env-flag) [![Coverage Status](https://codecov.io/gh/grimen/node-env-flag/branch/master/graph/badge.svg)](https://codecov.io/gh/grimen/node-env-flag)
 
 Little util function for simpler extracting `Boolean` values from `ENV` variables in Node.js, i.e. `true` values (`true`, `TRUE`, `1`) vs. `false` values (`false`, `FALSE`, `0`).
 
