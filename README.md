@@ -6,11 +6,11 @@ Little util function for simpler extracting `Boolean` values from `ENV` variable
 ## Example
 
 ```javascript
-const DEFAULT_FOO = 1;
+const DEFAULT_FOO = 1
 
-const flag = require('node-env-flag');
+const flag = require('node-env-flag')
 
-const yep = flag(process.env.FOO, DEFAULT_FOO);
+const yep = flag(process.env.FOO, DEFAULT_FOO)
 
 if (yep) {
     console.log("Foo!")
